@@ -2,8 +2,15 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtract = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const devMode = process.env.NODE_ENV !== 'production';
 
-module.exports ={
+
+const webpackConfig ={
+    entry:'./src/index.js',
+    output:{
+        path:path.join(__dirname,'dist'),
+        filename:'bundle.js'
+    },
     resolve:{
         extensions:['.js','.jsx']
     },
@@ -28,6 +35,9 @@ module.exports ={
                       loader: MiniCssExtract.loader,
                       options: {
                         publicPath: (resourcePath, context) => {
+                            // publicPath is the relative path of the resource to the context
+                            // e.g. for ./css/admin/main.css the publicPath will be ../../
+                            // while for ./css/main.css the publicPath will be ../
                             return path.relative(path.dirname(resourcePath), context) + '/'
                           },
                       }
@@ -50,4 +60,5 @@ module.exports ={
         }),
         new OptimizeCssAssetsPlugin(),
     ],
-}
+};
+module.exports = webpackConfig;

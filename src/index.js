@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
-export default Index = () =>{
-    console.log("hola mundo");
-}
+import IndexView from "./components/index";
+const Index = () => {
+  return <IndexView />;
+};
+
+ReactDom.render(<Index />, document.getElementById("app"));
