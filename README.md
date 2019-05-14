@@ -1,4 +1,4 @@
-#CONFIGURANDO REACT.JS WEBPACK 4 Y BABEL 7.4
+##CONFIGURANDO REACT.JS WEBPACK 4 Y BABEL 7.4
 
 El siguiente repositorio es una configuración base para poder ver de los nuevos cambios de babel 7.4.
 Para instalar las dependencias ejecute la siguiente linea de comando.
