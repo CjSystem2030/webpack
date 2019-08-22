@@ -1,14 +1,14 @@
 ##CONFIGURANDO REACT.JS WEBPACK 4 Y BABEL 7.4
 
 El siguiente repositorio es una configuración base para reactjs y  babel 7.4.
-Para instalar las dependencias ejecutar la siguiente linea de comando.
+Para instalar las dependencias debera ejecutar la siguiente linea de comando.
 
 ```
 npm install
 ```
-Con eso tendra todas las dependencias usas en esta configuración
+Con eso tendra todas las dependencias usadas en esta configuración.
 
-para ejecutar en modo desarrollo ejecutar lo siguiente
+Para ejecutar en modo desarrollo, ejecutar lo siguiente
 
 
 ```
@@ -17,7 +17,7 @@ npm run start
 
 se abrira una pestaña en el navegador con un pequeño ejemplo.
 
-para depurar en modo producción.
+Depurar en modo producción.
 
 ```
 npm run build
