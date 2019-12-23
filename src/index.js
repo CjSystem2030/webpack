@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
-import IndexView from "./components/index";
+import IndexView from "./app";
 const Index = () => {
   return <IndexView />;
 };
